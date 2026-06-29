@@ -1,0 +1,16 @@
+[server]
+# 限制单个上传文件最大体积（单位 MB），防止公网滥用导致内存溢出
+maxUploadSize = 50
+# 关闭使用统计收集
+gatherUsageStats = false
+
+[browser]
+gatherUsageStats = false
+
+[theme]
+# 界面主题（可按喜好调整）
+primaryColor = "#1f77b4"
+backgroundColor = "#ffffff"
+secondaryBackgroundColor = "#f2f6fa"
+textColor = "#222222"
+font = "sans serif"
