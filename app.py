@@ -20,13 +20,17 @@ from analysis import (
     report,
     statistical,
 )
-from utils import loader
+from utils import auth, loader
 
 st.set_page_config(page_title="Excel 自动数据分析", page_icon="📊", layout="wide")
 
 
 def main() -> None:
     """应用主入口。"""
+    # 访问密码校验：未通过则停止渲染后续内容
+    if not auth.check_password():
+        st.stop()
+
     st.title("📊 Excel 自动数据分析工具")
     st.caption("上传 Excel 文件，自动完成统计与计量经济学分析")
 
