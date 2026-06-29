@@ -16,6 +16,7 @@ from analysis import (
     descriptive,
     econometrics,
     models,
+    panel,
     profiling,
     report,
     statistical,
